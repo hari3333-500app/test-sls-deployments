@@ -8,6 +8,7 @@ jobs:
 
     env: 
       VERSION: "2"
+      KEY: ${{ secrets.KEY }}
 
     steps:
       - name: Checkout repository
@@ -16,5 +17,5 @@ jobs:
       - name: Ready to deploy the code
         run: echo "Ready to deploy the code of the version $KEY"
 
-      - name: Testing the secrates
+      - name: Testing the secrets
         run: echo "Ready to deploy the code of the version $VERSION"
